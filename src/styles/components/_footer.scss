@@ -1,0 +1,25 @@
+.section-footer {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  .left-footer {
+    padding-left: 30px;
+  }
+  .right-footer {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+  }
+  @include md {
+    font-size: 16px;
+    .right-footer {
+      width: 300px;
+    }
+  }
+}

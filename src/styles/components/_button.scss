@@ -1,0 +1,32 @@
+.button-basic {
+  padding: 10px 40px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.primary-line {
+  @extend .button-basic;
+  background: none;
+  border: 2px solid $maincolor;
+  color: $maincolor;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-btn {
+  @extend .button-basic;
+  background-color: $maincolor;
+  color: white;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.primary-btn-lg {
+  @extend .primary-btn;
+  padding: 20px 40px !important;
+  font-size: $sizedsc;
+}

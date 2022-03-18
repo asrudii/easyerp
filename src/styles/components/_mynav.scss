@@ -1,0 +1,87 @@
+.mynav {
+  position: relative;
+  background-color: none;
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100px;
+  .hamburger-menu {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .nav-link {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    .close-btn-nav {
+      position: absolute;
+      right: 20px;
+      bottom: 50%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    li {
+      font-weight: bold;
+      list-style: none;
+      padding-bottom: 10px;
+      a {
+        color: inherit;
+        &:hover {
+          color: $maincolor;
+        }
+      }
+    }
+  }
+  @include md {
+    .nav-link {
+      width: 500px;
+      height: auto;
+      background-color: white !important;
+      color: inherit;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 0;
+      ul {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      li {
+        padding-bottom: 0;
+        a {
+          color: inherit;
+          &:hover {
+            color: $maincolor;
+          }
+        }
+      }
+    }
+    .hamburger-menu {
+      display: none;
+    }
+    .close-btn-nav {
+      display: none;
+    }
+  }
+}

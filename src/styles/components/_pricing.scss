@@ -1,0 +1,55 @@
+.section-pricing {
+  @extend .section-padding;
+  .wrap-pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .wrap-card-price {
+      @extend .column-flex;
+      padding: 40px 30px;
+      margin: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid $thirdblack;
+      width: 300px;
+      .card-title {
+        @extend .column-flex;
+        width: 100%;
+        border-bottom: 1px solid $thirdblack;
+        padding-bottom: 30px;
+        h3 {
+          color: $textsecond;
+          font-size: $sizedsc2;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        .total-price {
+          color: $maincolor;
+          font-size: $sizedsc3;
+          font-weight: bold;
+        }
+        .time-price {
+          color: $textsecond;
+          font-size: $sizedsc;
+        }
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20px;
+        min-height: 400px;
+        overflow-y: hidden;
+        ul {
+          padding: 0;
+          text-align: center;
+          li {
+            list-style: none;
+            padding-bottom: 20px;
+            font-size: $sizedsc;
+            color: $textsecond;
+          }
+        }
+      }
+    }
+  }
+}

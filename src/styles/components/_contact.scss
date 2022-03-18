@@ -1,0 +1,71 @@
+.section-contact {
+  @extend .bg-blue;
+  @extend .section-padding;
+  padding-bottom: 0px;
+  .contact-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .form-contact-wrap {
+      padding: 30px;
+      .title-contact {
+        padding-bottom: 40px;
+        h3 {
+          margin: 5px 0;
+          color: $maincolor;
+          font-size: $sizedsc3;
+        }
+        span {
+          font-size: $sizedsc;
+          color: $textsecond;
+          font-style: italic;
+        }
+      }
+    }
+    .contact-info-wrap {
+      background-color: $maincolor;
+      height: 600px;
+      padding: 30px;
+      color: white;
+      .contact-info-content {
+        @extend .column-flex;
+        padding: 40px 0px;
+        img {
+          width: 300px;
+          height: 250px;
+        }
+        .list-info {
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 40px;
+          .info-group {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px;
+            span {
+              padding-left: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    @include md {
+      flex-direction: row;
+      padding-bottom: 100px;
+      .form-contact-wrap {
+        width: 50%;
+      }
+      .contact-info-wrap {
+        width: 50%;
+        border-radius: 20px 0px 0px 20px;
+        .contact-info-content {
+          img {
+            width: 450px;
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
+}

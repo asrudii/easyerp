@@ -1,0 +1,38 @@
+.section-about {
+  @extend .bg-blue;
+  @extend .section-padding;
+  .aboutwrap {
+    @extend .main-flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    .img-about {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 50px;
+      img {
+        width: 300px;
+      }
+    }
+    .dsc-about {
+      width: 100%;
+      text-align: center;
+      font-size: $sizedsc2;
+      color: $textsecond;
+    }
+    @include md {
+      .img-about {
+        width: 50%;
+        padding-bottom: 50px;
+        text-align: right;
+        img {
+          width: 600px;
+        }
+      }
+      .dsc-about {
+        text-align: left;
+        width: 600px;
+        padding-left: 50px;
+      }
+    }
+  }
+}

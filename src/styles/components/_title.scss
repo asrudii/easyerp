@@ -1,0 +1,14 @@
+.section-title {
+  @extend .main-flex;
+  font-size: 26px;
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.decoration-title {
+  border: solid 5px $maincolor;
+  width: 30px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
